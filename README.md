@@ -89,7 +89,7 @@ ORDER BY
 
 The following graph was then generated in Python using Pandas for skills which were requested more than once in these 10 jobs and it can be observed that 8 of the top 10 jobs requested SQL as a skill, with python, excel and aws following behind.
 
-![High-Paying jobs skills](project_images\q2_highest_paying_skills.png)
+![High-Paying jobs skills](project_images/q2_highest_paying_skills.png)
 
 ### 3. In-Demand Skills for Data Analysts
 This query focused on finding the most in demand skills across all the data for the data analyst position.
