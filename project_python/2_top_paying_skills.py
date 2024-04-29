@@ -1,3 +1,6 @@
+# Visualise the skills demanded for the highest paying jobs  
+# where the skill is noted in more than one posting
+
 import pandas as pd
 import os
 
@@ -8,6 +11,7 @@ print(df["skills"])
 df_skills = df['skills'].value_counts().reset_index()
 
 df_skills.columns = ['Skill', 'Frequency']
+df_skills = df_skills[df_skills['Frequency'] > 1]
 df_skills.set_index('Skill', inplace=True)
 
 bar_chart = df_skills.plot.barh()
