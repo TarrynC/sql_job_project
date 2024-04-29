@@ -6,6 +6,7 @@ Q: What are the most optimal skills to learn? (in demand and high paying)
         offers strategic insights for career development in data analysis
 */
 
+/*
 -- Create two CTEs from previous queries
 WITH skills_demand AS (
 -- Query 3 modified
@@ -56,7 +57,7 @@ ORDER BY
     demand_count DESC
 LIMIT 25;
 
-
+*/
 -- Shorter more concise query
 SELECT
     skills_dim.skill_id,
@@ -76,6 +77,6 @@ GROUP BY
 HAVING  
     COUNT(skills_job_dim.job_id) > 10
 ORDER BY
-    avg_salary DESC,
-    demand_count DESC
+    demand_count DESC,
+    avg_salary DESC
 LIMIT 25;

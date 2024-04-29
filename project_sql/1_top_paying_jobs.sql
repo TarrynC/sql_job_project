@@ -10,7 +10,7 @@ SELECT
     job_title,
     job_location,
     job_schedule_type,
-    salary_year_avg,
+    salary_year_avg * 18.65, --conversion to rands from usd at time of project
     job_posted_date,
     name AS company_name
 FROM

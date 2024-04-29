@@ -18,7 +18,7 @@ if not os.path.exists(directory):
     os.makedirs(directory)
 
 fig = bar_chart.get_figure()
-file_path_bar = os.path.join(directory, 'q3_highest_paying_skills_bar.png')
+file_path_bar = os.path.join(directory, 'q3_most_demanded_skills_bar.png')
 fig = bar_chart.get_figure()
 fig.savefig(file_path_bar)
 
@@ -26,5 +26,5 @@ plt.figure(figsize=(8, 8))
 plt.pie(df['demand_count'], labels=df['skills'], autopct='%1.1f%%', startangle=140)
 plt.title('Distribution of Skills')
 plt.axis('equal')
-file_path_pie = os.path.join(directory, 'q3_highest_paying_skills_pie.png')
+file_path_pie = os.path.join(directory, 'q3_most_demanded_skills_pie.png')
 plt.savefig(file_path_pie)
